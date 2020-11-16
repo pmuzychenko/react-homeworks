@@ -1,0 +1,28 @@
+.greetingClass {
+    width: 600px;
+    margin: 50px auto;
+    font-size: 18px;
+    text-align: center;
+}
+.greetingClass button {
+    margin-left: 10px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.someClass {
+    border: 3px solid green;
+    font-size: 18px;
+    width: 250px;
+}
+
+.error {
+    border: 1px solid red;
+    font-size: 18px;
+    width: 250px;
+}
+
+.errorTextClass {
+    color: red;
+    margin-left: 10px;
+}

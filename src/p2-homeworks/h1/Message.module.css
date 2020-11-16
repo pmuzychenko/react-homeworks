@@ -1,0 +1,59 @@
+.message {
+    display: flex;
+    width: auto;
+    justify-content: flex-start;
+}
+
+.message .avatar_img {
+    width: 70px;
+    height: 70px;
+    border-radius: 30px;
+    margin-right: 20px;
+    align-self: flex-end;
+}
+
+.message .wrapper {
+    position: relative;
+}
+
+.message .wrapper .message_block {
+   padding: 20px;
+    width: 350px;
+    height: 100px;
+    background-color: dimgrey;
+    border-radius: 8px 8px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+align-content: center;
+    font-size: 28px;
+}
+
+.message .wrapper .message_block::after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    left: -20px;
+    bottom: 0px; /* Положение треугольника */
+    border: 15px solid transparent;
+    border-right: 10px dashed dimgrey;
+    border-bottom: 10px dashed dimgrey;
+}
+
+.message .message_block .name {
+    color: #958fb3;
+}
+
+.message .message_block .text {
+    color: white;
+}
+
+.message .message_block .time {
+    align-self: flex-end;
+    color: white;
+    opacity: 0.2;
+}
+
+
+
+
+

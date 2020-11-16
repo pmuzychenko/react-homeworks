@@ -1,0 +1,12 @@
+.affairBlock li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 400;
+    /*text-decoration: underline;*/
+    text-shadow: 1px 1px 1px grey;
+}
+
+.buttonDeleteStyles {
+    height: 20px;
+    width: 30px;
+}
