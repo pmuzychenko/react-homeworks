@@ -18,8 +18,7 @@ function Affair(props: AffairPropsType) {
         <div className={styles.affairBlock}>
             <ul>
                 <li><span> {props.affair._id}. {props.affair.name}: {props.affair.priority} </span>
-                    <SuperButton red onClick={deleteCallback}>X</SuperButton>
-                    {/*<button onClick={deleteCallback}>X</button>*/}
+                    <SuperButton onClick={deleteCallback}>X</SuperButton>
                 </li>
             </ul>
         </div>
