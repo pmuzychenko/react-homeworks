@@ -1,5 +1,11 @@
 .default {
-    /*background: red;*/
+    background: #9a9a9a;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px;
+    border: 2px solid black;
+    text-align: center;
 }
 
 .red {
