@@ -1,7 +1,19 @@
 .App {
-font-size: 21px;
+    font-size: 21px;
     color: black;
     font-weight: bold;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
 }
 
+.header {
+    text-align: center;
+    font-size: 32px;
+    padding: 10px;
+}
 
+.content {
+    display: flex;
+    flex-grow: 1;
+}
