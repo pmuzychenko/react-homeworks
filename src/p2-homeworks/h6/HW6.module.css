@@ -1,0 +1,24 @@
+.wrapperHW6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.wrapperHW6 .superSpan {
+    background-color: #2c3e50;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.superSpanClass {
+    font-size: 28px;
+    color: white;
+    font-weight: 400;
+}
+
+.buttons {
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
