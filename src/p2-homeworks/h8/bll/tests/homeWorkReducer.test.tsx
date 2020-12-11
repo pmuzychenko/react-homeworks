@@ -1,7 +1,19 @@
 import React from 'react';
 import {homeWorkReducer} from "../homeWorkReducer";
 
-let initialState: any[];
+ type PeopleType = {
+     _id: number
+     name: string
+     age: number
+ }
+export type initialStateType = Array<PeopleType>
+
+let initialState: initialStateType
+
+export type actionType = {
+    type: string
+    payload: string | number
+}
 
 beforeEach(() => {
     initialState = [
@@ -15,18 +27,35 @@ beforeEach(() => {
 });
 
 test("sort name up", () => {
-    const newState = homeWorkReducer(initialState, {type: "sort", payload: "up"});
 
+    const action: actionType = {
+        type: "sort", payload: "up"
+    }
+    const newState = homeWorkReducer(initialState, action);
     console.log(newState);
-    // expect(...).toBe(...);
+    expect(newState[0].name).toBe('Александр');
+    expect(newState[5].name).toBe('Кот');
 });
 test("sort name down", () => {
-    const newState = homeWorkReducer(initialState, {type: "sort", payload: "down"});
 
+    const action: actionType = {
+        type: "sort", payload: "down"
+    }
 
+    const newState = homeWorkReducer(initialState, action);
+    expect(newState[0].name).toBe('Кот');
+    expect(newState[5].name).toBe('Александр');
 });
+
 test("check age 18", () => {
-    const newState = homeWorkReducer(initialState, {type: "check", payload: 18});
 
+    const action: actionType = {
+        type: "check", payload: 18
+    }
 
+    const newState = homeWorkReducer(initialState, action);
+
+    expect(newState.length).toBe(4);
+    expect(newState[0].name).toBe('Александр');
+    expect(newState[1].name).toBe('Виктор');
 });

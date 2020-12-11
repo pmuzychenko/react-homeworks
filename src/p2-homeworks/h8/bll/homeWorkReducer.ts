@@ -1,13 +1,20 @@
-export const homeWorkReducer = (state: any, action: any): any => {
+import {actionType, initialStateType} from "./tests/homeWorkReducer.test";
+
+export const homeWorkReducer = (state: initialStateType, action: actionType): initialStateType => {
     switch (action.type) {
         case "sort": {
+            if (action.payload === "up") {
+                return [...state.sort((a, b) => a.name.localeCompare(b.name))]
 
+            } else if (action.payload === "down") {
+                [...state.sort((b, a) => a.name.localeCompare(b.name))]
+            }
             return state
         }
         case "check": {
-
-            return state
+            return [...state.filter(arr => arr.age >= action.payload)]
         }
-        default: return state
+        default:
+            return state
     }
 };
