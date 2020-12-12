@@ -7,7 +7,7 @@ export const homeWorkReducer = (state: initialStateType, action: actionType): in
                 return [...state.sort((a, b) => a.name.localeCompare(b.name))]
 
             } else if (action.payload === "down") {
-               return [...state.sort((b, a) => a.name.localeCompare(b.name))]
+                return [...state.sort((b, a) => a.name.localeCompare(b.name))]
             }
         }
         case "check": {
