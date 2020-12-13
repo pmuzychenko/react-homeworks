@@ -18,7 +18,8 @@ function HW8() {
 
     const finalPeople = people.map(p => (
         <div className={styles.finalPeople} key={p._id}>
-            {`name: ${p.name}, age: ${p.age}`}
+            <div>{p.name}</div>
+            <div>{p.age}</div>
         </div>
     ))
 
@@ -31,6 +32,10 @@ function HW8() {
             <hr/>
             homeworks 8
             <div className={styles.wrapperHW8}>
+                <div className={styles.tableHeader}>
+                    <div>Name</div>
+                    <div>Age</div>
+                </div>
 
                 {/*should work (должно работать)*/}
 
@@ -40,7 +45,6 @@ function HW8() {
                     <div><SuperButton onClick={sortDown}>sort down</SuperButton></div>
                     <div><SuperButton onClick={checkAge}>check 18</SuperButton></div>
                 </div>
-
                 <hr/>
                 {/*для личного творчества, могу проверить*/}
                 {/*<AlternativePeople/>*/}

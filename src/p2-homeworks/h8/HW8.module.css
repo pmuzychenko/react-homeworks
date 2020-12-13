@@ -1,11 +1,9 @@
 .wrapperHW8 {
-    margin: 60px auto;
+    margin: 25px auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 200px;
-
 }
 
 .buttons {
@@ -15,10 +13,21 @@
 }
 
 .finalPeople {
+    width: 300px;
     margin-top: 5px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 21px;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
     padding: 5px;
-    font-weight: 600;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tableHeader {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+    font-weight: 800;
 }
