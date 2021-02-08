@@ -18,4 +18,5 @@ function Junior() {
         </div>
     );
 }
+
 export default Junior

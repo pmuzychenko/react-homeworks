@@ -1,14 +1,30 @@
-const initState = {
+export type FilterThemeValueType = 'dark' | 'red' | 'some'
 
+type initStateType = {
+    currentTheme: string
+}
+const initState: initStateType = {
+    currentTheme: 'dark'
 };
 
-export const themeReducer = (state = initState, action: any): any => { // fix any
+export const themeReducer = (state = initState, action: ActionsType): initStateType => { // fix any
     switch (action.type) {
-        case "": {
-            return state;
+        case "CHOOSE-THEME": {
+            return {
+                ...state,
+                currentTheme: action.newTheme
+            }
         }
-        default: return state;
+        default:
+            return state;
     }
 };
 
-export const changeThemeC = (): any => {}; // fix any
+type ActionsType = themeACType
+
+type themeACType = {
+    type: "CHOOSE-THEME"
+    newTheme: string
+}
+
+export const changeThemeC = (newTheme: string): themeACType => ({type: "CHOOSE-THEME", newTheme}); // fix any
