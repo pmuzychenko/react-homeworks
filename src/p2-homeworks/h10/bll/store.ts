@@ -4,7 +4,7 @@ import { themeReducer } from "../../h12/bll/themeReducer";
 
 const reducers = combineReducers({
     loading: loadingReducer,
-    theme: themeReducer
+    themes: themeReducer
 });
 
 const store = createStore(reducers);

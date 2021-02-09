@@ -8,7 +8,7 @@ import {changeThemeC} from "./bll/themeReducer";
 const themes = ['dark', 'red', 'some'];
 
 function HW12() {
-    const theme = useSelector<AppStoreType, string>(state => state.theme.currentTheme);
+    const theme = useSelector<AppStoreType, string>(state => state.themes.currentTheme);
     const dispatch = useDispatch()
 
     const onChangeOption = (newTheme: string) => {

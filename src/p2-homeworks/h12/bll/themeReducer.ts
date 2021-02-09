@@ -9,7 +9,7 @@ const initState: initStateType = {
 
 export const themeReducer = (state = initState, action: ActionsType): initStateType => { // fix any
     switch (action.type) {
-        case "CHOOSE-THEME": {
+        case "CHANGE-THEME": {
             return {
                 ...state,
                 currentTheme: action.newTheme
@@ -23,8 +23,8 @@ export const themeReducer = (state = initState, action: ActionsType): initStateT
 type ActionsType = themeACType
 
 type themeACType = {
-    type: "CHOOSE-THEME"
+    type: "CHANGE-THEME"
     newTheme: string
 }
 
-export const changeThemeC = (newTheme: string): themeACType => ({type: "CHOOSE-THEME", newTheme}); // fix any
+export const changeThemeC = (newTheme: string): themeACType => ({type: "CHANGE-THEME", newTheme}); // fix any
