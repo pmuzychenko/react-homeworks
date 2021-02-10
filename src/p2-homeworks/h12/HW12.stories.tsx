@@ -4,7 +4,7 @@ import HW12 from "./HW12";
 import ReduxStoreProviderDecorator from "./decorator/ReduxStoreProviderDecorator";
 
 export default {
-    title: 'REACT-HOMEWORK/HW12',
+    title: 'REACT-HOMEWORK/HW13',
     component: HW12,
     decorators: [ReduxStoreProviderDecorator],
 } as Meta;

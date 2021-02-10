@@ -1,6 +1,5 @@
 .wrapper {
     width: 97%;
     height: 15%;
-    display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
 }
