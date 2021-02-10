@@ -3,7 +3,7 @@ import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 import SuperCheckbox from "../h4/common/c3-SuperCheckbox/SuperCheckbox";
 import {requestsAPI, responseFromServer} from "./RequestsAPI";
 
-function Request() {
+export function Request() {
     const [checkboxValue, SetCheckboxValue] = useState<boolean>(false);
 
     useEffect(() => {

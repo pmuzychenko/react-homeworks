@@ -5,14 +5,19 @@ const instance = axios.create({
 })
 
 export let responseFromServer = ''
+
 export const requestsAPI = {
+
     sendRequest(checkboxValue: boolean) {
+
         return instance.post(`auth/test`,{success: checkboxValue})
+
             .then(response => {
                 console.log({...response})
                 console.log(response.data.errorText)
                 responseFromServer = response.data.errorText
             })
+
             .catch( error => {
                 console.log({...error})
                 console.log(error.response ? error.response.data.errorText : error.message)

@@ -8,7 +8,6 @@ function HW13() {
         <div className={styles.HW13}>
             <Request/>
         </div>
-
     );
 }
 

@@ -1,8 +1,9 @@
 import React from "react";
 import Message from "./Message";
+import avatar from "./assets/images/avatar.jpg"
 
 const messageData = {
-    avatar: "https://scontent.fdnk3-2.fna.fbcdn.net/v/t1.0-9/p960x960/70912169_3605326306160106_9176558413746798592_o.jpg?_nc_cat=103&ccb=2&_nc_sid=85a577&_nc_ohc=O-l9uQbLtaAAX9HVT3Q&_nc_ht=scontent.fdnk3-2.fna&tp=6&oh=9dae4a430ae7cd63dc04e9b99ffe6551&oe=5FE0A867",
+    avatar: avatar,
     name: "Pavel",
     message: "npm start нажимал?",
     time: "20:00",
